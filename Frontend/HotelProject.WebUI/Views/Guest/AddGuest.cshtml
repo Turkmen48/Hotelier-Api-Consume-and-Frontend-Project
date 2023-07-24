@@ -1,0 +1,25 @@
+﻿@model CreateGuestDto
+@{
+    ViewData["Title"] = "AddGuest";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <label>Misafir Adı:</label>
+    <input typeof="text" asp-for="Name" class="form-control"></>
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <label>Misafir Soyadı:</label>
+    <input typeof="text" asp-for="Surname" class="form-control"></>
+    <span asp-validation-for="Surname" class="text-danger"></span>
+
+    <br />
+    <label>Misafir Şehir:</label>
+    <input typeof="text" asp-for="City" class="form-control"></>
+    <span asp-validation-for="City" class="text-danger"></span>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
+

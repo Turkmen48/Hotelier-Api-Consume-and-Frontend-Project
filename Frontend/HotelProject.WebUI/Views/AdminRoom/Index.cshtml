@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ResultRoomDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Numarası</th>
+        <th>Başlığı</th>
+        <th>Fiyatı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.RoomID</td>
+            <td>@item.RoomNumber</td>
+            <td>@item.Title</td>
+            <td>@item.Price</td>
+            <td><a href="/AdminRoom/DeleteRoom/@item.RoomID" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a></td>
+            <td><a href="/AdminRoom/UpdateRoom/@item.RoomID" class="btn mb-1 btn-rounded btn-outline-warning">Güncelle</a></td>
+
+        </tr>
+    }
+
+</table>
+
+<a asp-action="AddRoom" asp-controller="AdminRoom" class="btn mb-1 btn-rounded btn-outline-info">Yeni Oda</a>
+

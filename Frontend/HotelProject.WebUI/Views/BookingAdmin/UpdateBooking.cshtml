@@ -1,0 +1,68 @@
+﻿@model UpdateBookingDto
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <input type="hidden" asp-for="BookingID" />
+    <label>Misafir Adı:</label>
+    <input typeof="text" asp-for="Name" class="form-control"></>
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <label>Misafir Mail:</label>
+    <input typeof="text" asp-for="Mail" class="form-control"></>
+    <span asp-validation-for="Mail" class="text-danger"></span>
+    <br />
+    <label>Misafir Şehir:</label>
+    <input typeof="text" asp-for="City" class="form-control"></>
+    <span asp-validation-for="City" class="text-danger"></span>
+    <br />
+    <label>Misafir Ülke:</label>
+    <input typeof="text" asp-for="Country" class="form-control"></>
+    <span asp-validation-for="Country" class="text-danger"></span>
+    <br />
+    <label>Durum:</label>
+    <input typeof="text" asp-for="Status" class="form-control"></>
+    <span asp-validation-for="Status" class="text-danger"></span>
+    <br />
+    <label>Check In:</label>
+    <input type="date" asp-for="CheckIn" class="form-control"></>
+    <span asp-validation-for="CheckIn" class="text-danger"></span>
+
+    <br />
+    <label>Check Out:</label>
+    <input type="date" asp-for="CheckOut" class="form-control"></>
+    <span asp-validation-for="CheckOut" class="text-danger"></span>
+
+    <br />
+    <label>Yetişkin Sayısı:</label>
+    <input type="text" asp-for="AdultCount" class="form-control"></>
+    <span asp-validation-for="AdultCount" class="text-danger"></span>
+
+    <br />
+    <label>Çocuk Sayısı:</label>
+    <input type="text" asp-for="ChildCount" class="form-control"></>
+    <span asp-validation-for="ChildCount" class="text-danger"></span>
+
+    <br />
+    <label>Oda Sayısı:</label>
+    <input type="text" asp-for="RoomCount" class="form-control"></>
+    <span asp-validation-for="RoomCount" class="text-danger"></span>
+
+    <br />
+    <label>Özel İstekler (Kullanıcı):</label>
+    <textarea rows="5" type="text" asp-for="SpecialRequest" class="form-control"></textarea>
+    <span asp-validation-for="SpecialRequest" class="text-danger"></span>
+
+    <br />
+    <label>Açıklama:</label>
+    <textarea rows="5" type="text" asp-for="Description" class="form-control"></textarea>
+    <span asp-validation-for="Description" class="text-danger"></span>
+
+    <br />
+
+
+    <button type="submit" class="btn btn-warning">Güncelle</button>
+</form>
+

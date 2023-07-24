@@ -1,0 +1,32 @@
+﻿@model AdminMailViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+@section Heads{
+    <link href="~/adminweb/plugins/summernote/dist/summernote.css" rel="stylesheet">
+}
+<form method="post">
+    <label>Alıcı Mail Adresi:</label>
+    <input type="text" class="form-control" asp-for="ReceiverMail" />
+    <br />
+    <label>Konu:</label>
+    <input type="text" class="form-control" asp-for="Subject" />
+    <br />
+    <label>Mesaj:</label>
+    <textarea class="summernote" asp-for="Body"></textarea>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
+
+@section Scripts{
+    <script src="~/adminweb/plugins/summernote/dist/summernote.min.js"></script>
+    <script src="~/adminweb/plugins/summernote/dist/summernote-init.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#summernote').summernote();
+        });
+    </script>
+}
+

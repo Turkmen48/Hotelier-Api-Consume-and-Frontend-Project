@@ -1,0 +1,73 @@
+﻿@model InboxContactDto
+@{
+    ViewData["Title"] = "MessageDetailsByInbox";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-13">
+
+    <div class="card">
+        <div class="card-body">
+            <div class="email-left-box">
+                <a asp-action="AddSendMessage" asp-controller="AdminContact" class="btn btn-primary btn-block">Yeni Mesaj</a>
+                @await Html.PartialAsync("SideBarContactPartial")
+                <h5 class="mt-5 m-b-10">Kategoriler</h5>
+                @await Html.PartialAsync("SideBarContactCategoryPartial")
+
+            </div>
+            <div class="email-right-box">
+                <div role="toolbar" class="toolbar">
+                    <div class="btn-group">
+                        <button aria-expanded="false" data-toggle="dropdown" class="btn btn-dark dropdown-toggle" type="button">
+                            Mesaj: <span class="caret m-l-5"></span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="read-content">
+                    <div class="media pt-5">
+                        <img class="mr-3 rounded-circle" src="~/adminweb/images/avatar/3.png">
+                        <div class="media-body">
+                            <h5 class="m-b-3">@Model.Name</h5>
+                            <p class="m-b-2">@Model.Date.ToString("dd/MMM/yyyy HH:mm")</p>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="media mb-4 mt-1">
+                        <div class="media-body">
+                            <span class="float-right">@Model.Date.ToString("HH:mm")</span>
+                            <h4 class="m-0 text-primary">@Model.Subject</h4><small class="text-muted">From:@Model.Mail</small>
+                        </div>
+                    </div>
+
+                    <p>@Html.Raw(Model.Message)</p>
+
+
+
+
+                    <hr>
+                   
+
+                </div>
+                <!-- panel -->
+                <div class="row">
+                    <div class="col-7">
+                        <div class="text-left">1 - 20 of 568</div>
+                    </div>
+                    <div class="col-5">
+                        <div class="btn-group float-right">
+                            <button class="btn btn-gradient" type="button">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <button class="btn btn-dark" type="button">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,76 @@
+﻿@model List<ResultAppUserDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="active-member">
+    <div class="table-responsive">
+        <table class="table table-xs mb-0">
+            <thead>
+                <tr>
+                    <th>Kullanıcı</th>
+                    <th>Çalıştığı Şube</th>
+                    <th>Çalıştığı Şehir</th>
+                    <th>Ülke</th>
+                    <th>Durum</th>
+                    <th>Cinsiyet</th>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td><img src="@(item.ImageUrl??"/adminweb/images/avatar/1.jpg")" class=" rounded-circle mr-3" alt="">@item.Name @item.Surname</td>
+                        
+                       
+                        <td>
+                            <span>@item.WorkLocation.WorkLocationName</span>
+                        </td>
+                        <td>
+                            <span>@item.WorkLocation.WorkLocationCity</span>
+                        </td>
+                          <td>
+                              @item.Country
+                          </td>
+                        <td>
+                            <div>
+                                <div class="progress" style="height:6px">
+                                    @{
+                                        if (item.Gender == "Erkek")
+                                        {
+                                            <div class="progress-bar bg-primary" style="width:50%"></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="progress-bar bg-danger" style="width:50%"></div>
+                                        }
+                                    }
+
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>@{
+                                    if (item.Gender == "Erkek")
+                                    {
+                                        <i class="fa fa-circle-o text-primary mr-2">@item.Gender</i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-circle-o text-danger mr-2">@item.Gender</i>
+                                    }
+                                }</span>
+                        </td>
+                        
+                    </tr>
+ }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a href="/Register/Index/" class="btn btn-primary">Yeni Kullanıcı Kaydı</a>
+
