@@ -12,20 +12,22 @@ localhost
 
 
 ## Ekran Görüntüleri
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/1.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/2.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/3.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/4.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/5.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/6.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/7.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/8.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/9.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/1.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/1.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/1.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/1.png" width="900" height="500">
-<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/main/screenshots/1.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/1.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/2.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/3.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/4.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/5.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/6.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/7.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/8.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/9.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/10.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/11.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/12.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/13.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/14.png" width="900" height="500">
+<img src="https://github.com/Turkmen48/Hotelier-Api-Consume-and-Frontend-Project/blob/master/screenshots/15.png" width="900" height="500">
+
 
 
 
