@@ -10,7 +10,7 @@
         <div class="card-body">
             <div class="email-left-box">
                 <a asp-action="AddSendMessage" asp-controller="AdminContact" class="btn btn-primary btn-block">Yeni Mesaj</a>
-                @await Html.PartialAsync("SideBarContactPartial")
+                @await Component.InvokeAsync("_InboxSendboxPartial")
                 <h5 class="mt-5 m-b-10">Kategoriler</h5>
                 @await Html.PartialAsync("SideBarContactCategoryPartial")
 
